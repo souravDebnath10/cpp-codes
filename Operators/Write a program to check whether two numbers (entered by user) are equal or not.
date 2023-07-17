@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    int i,j;
+    cout<<"Enter the numbers to be checked: ";
+    cin>>i>>j;
+
+    cout<<(i == j)<<endl;
+
+    return 0;
+}
