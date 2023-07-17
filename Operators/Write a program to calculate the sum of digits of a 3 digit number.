@@ -6,11 +6,12 @@ int main(){
     cout<<"Enter a three digit no: ";
     cin>>i;
 
-    int a1 = i%10;
-    int a2 = (i/10)%10;
-    int a3 = (i/100);
+    for(int j=0;j<3;j++){
+        sum+=i;
+        i = i/10;
+    }
 
-    cout<<a1+a2+a3<<endl;
+    cout<<sum<<endl;
 
     return 0;
 }
