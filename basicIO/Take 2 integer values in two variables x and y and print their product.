@@ -1,0 +1,10 @@
+#include<iostream>
+using namespace std;
+int main(){
+  int i,j;
+  cout<<"Enter the numbers: ";
+  cin>>i>>j;
+  int prod = i*j;
+  cout<<prod<<endl;
+  return 0;
+}
