@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    int boys,total;
+    boys = 17;
+
+    total = (80*45)/100;
+
+    cout<<"No of girls getting grade A are: "<<(total-boys)<<endl;
+    
+    return 0;
+}
