@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    int i;
+    cout<<"Enter a five digit no: ";
+    cin>>i;
+
+    int a1 = (i/10)%10;
+
+    int a2 = (i/10000);
+
+    cout<<a1+a2<<endl;
+
+    return 0;
+}
