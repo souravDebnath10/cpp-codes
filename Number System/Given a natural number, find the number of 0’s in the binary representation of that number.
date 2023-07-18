@@ -1,0 +1,35 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+
+int main(){
+    int sum;
+    cout<<"Enter a no: ";
+    cin>>sum;
+
+    int ans = 0;
+    int i = 0;
+    while(sum != 0){
+        int rem = sum%2;
+        long long int x = pow(10,i);
+        ans = ans + rem*x;
+        sum = sum/2;
+        i++;
+    }
+
+    string s = to_string(ans);
+
+    int c1 = 0;
+    int c0 = 0;
+
+    for(int i=0;i<s.length();i++){
+        if(s[i] == '1') c1 = 1;
+        if(c1 = 1){
+            if(s[i] == '0') c0++;
+        }
+    }
+
+    cout<<c0<<endl;
+
+    return 0;
+}
