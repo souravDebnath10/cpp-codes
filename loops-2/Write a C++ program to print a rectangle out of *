@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int i,j,h=4,w=16;
+    for(i=1;i<=h;i++){
+        for(j=1;j<=w;j++){
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+    return 0;
+}
