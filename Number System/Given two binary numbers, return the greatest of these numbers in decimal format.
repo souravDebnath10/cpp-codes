@@ -1,0 +1,29 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+
+int main(){
+    long long int x,y;
+    cout<<"Enter the two binary nos: ";
+    cin>>x>>y;
+
+    int greatest = 0;
+    long long int dg;
+
+    if(x>y) dg = x;
+    else dg = y;
+
+    int i = 0;
+
+    while(dg != 0){
+        int rem = dg%10;
+        int x = pow(2,i);
+        greatest += rem*x;
+        dg = dg/10;
+        i++;
+    }
+
+    cout<<"Greatest no is: "<<greatest<<endl;
+    
+    return 0;
+}
