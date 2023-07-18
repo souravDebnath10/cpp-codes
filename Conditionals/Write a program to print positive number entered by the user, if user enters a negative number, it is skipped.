@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int i;
+    cout<<"Enter a no: ";
+    cin>>i;
+
+    (i >= 0) ? cout<<i<<endl : cout<<"The number is negative and skipped"<<endl;
+
+    return 0;
+}
