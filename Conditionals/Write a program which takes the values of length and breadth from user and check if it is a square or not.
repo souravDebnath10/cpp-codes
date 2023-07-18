@@ -1,0 +1,11 @@
+# include <iostream>
+using namespace std;
+int main() {
+    int l,b;
+    cout<<"Enter the length and breadth: ";
+    cin>>l>>b;
+
+    cout<<(l == b)?"The entered dimensions forms a square ":"The entered dimensions forms a rectangle ";
+
+    return 0;
+}
