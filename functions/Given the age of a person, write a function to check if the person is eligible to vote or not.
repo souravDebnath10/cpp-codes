@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+
+bool isEligible(int age){
+    return (age >=18) ? true:false;
+}
+
+int main(){
+    int age;
+    cout<<"Enter age of the person: ";
+    cin>>age;
+
+    if(isEligible(age)) cout<<"The person is eligible to vote ";
+    else cout<<"The person is not eligible to vote ";
+
+    return 0;
+}
