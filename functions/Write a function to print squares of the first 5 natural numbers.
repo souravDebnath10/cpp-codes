@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+
+void printSq(int n){
+    for(int i=1;i<=n;i++) cout<<(i*i)<<" ";
+}
+
+int main(){
+    int n = 5;
+
+    printSq(n);
+
+    return 0;
+}
