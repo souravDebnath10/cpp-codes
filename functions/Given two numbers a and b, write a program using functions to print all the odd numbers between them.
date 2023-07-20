@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+
+void printOddNos(int a,int b){
+    for(int i=a;i<=b;i++) {
+        if((i%2)!=0) cout<<i<<" ";
+    }
+}
+
+int main(){
+    int a=1,b=10;
+    // cout<<"Enter the start and end nos: ";
+    // cin>>a>>b;
+
+    printOddNos(a,b);
+
+    return 0;
+}
