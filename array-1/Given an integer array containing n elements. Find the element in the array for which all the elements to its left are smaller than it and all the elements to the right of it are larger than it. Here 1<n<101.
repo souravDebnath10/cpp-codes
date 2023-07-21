@@ -11,13 +11,19 @@ int f(int *arr,int n){
 
         //checking for left side
         while(l >= 0){
-            if(arr[l] > arr[i]) lCheck = false;
+            if(arr[l] > arr[i]){
+                lCheck = false;
+                break;
+            }
             l--;
         }
 
         //checking for right side
         while(r < n){
-            if(arr[r] < arr[i]) rCheck = false;
+            if(arr[r] < arr[i]){
+                rCheck = false;
+                break;
+            }
             r++;
         }
 
