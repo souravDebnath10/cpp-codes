@@ -1,0 +1,53 @@
+#include<iostream>
+using namespace std;
+
+void sort(int *arr, int n)
+{
+    int i, j;
+    bool swapped;
+    for (i = 0; i < n - 1; i++) {
+        swapped = false;
+        for (j = 0; j < n - i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                swap(arr[j], arr[j + 1]);
+                swapped = true;
+            }
+        }
+  
+        // If no two elements were swapped
+        // by inner loop, then break
+        if (swapped == false)
+            break;
+    }
+}
+
+int main(){
+    int size1,size2;
+
+    cout<<"Enter the size of 1st array: ";
+    cin>>size1;
+
+    cout<<"Enter the elements of 1st array: ";
+    int arr1[size1];
+    for(int i=0;i<size1;i++) cin>>arr1[i];
+
+    cout<<"Enter the elements of 2nd array: ";
+    int arr2[size2];
+    for(int i=0;i<size2;i++) cin>>arr2[i];
+
+    int ansArr[size1+size2];
+
+    for(int i=0;i<size1;i++){
+        ansArr[i]=arr1[i];
+    }
+    for(int i=size1;i<size1+size2;i++){
+        ansArr[i]=arr2[i-size1];
+    }
+    
+    sort(ansArr,size1+size2);
+
+    for(int i=0;i<size1+size2;i++) cout<<ansArr[i]<<" ";
+    cout<<endl;
+
+    return 0;
+}
