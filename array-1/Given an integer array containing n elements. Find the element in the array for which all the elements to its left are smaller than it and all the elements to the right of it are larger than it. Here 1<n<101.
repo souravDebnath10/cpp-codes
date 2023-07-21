@@ -1,0 +1,43 @@
+#include<iostream>
+using namespace std;
+
+int f(int *arr,int n){
+    for(int i=0;i<n;i++){
+        int l = i-1;
+        int r = i+1;
+
+        bool lCheck = true;
+        bool rCheck = true;
+
+        //checking for left side
+        while(l >= 0){
+            if(arr[l] > arr[i]) lCheck = false;
+            l--;
+        }
+
+        //checking for right side
+        while(r < n){
+            if(arr[r] < arr[i]) rCheck = false;
+            r++;
+        }
+
+        if(lCheck and rCheck) return arr[i];
+    }
+
+    return INT64_MIN;
+}
+
+int main(){
+    int n;
+    cout<<"Enter the size of the array: ";
+    cin>>n;
+
+    int arr[n];
+
+    cout<<"Enter the elements of the array: ";
+    for(int i=0;i<n;i++) cin>>arr[i];
+
+    cout<<f(arr,n)<<endl;
+
+    return 0;
+}
