@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int shaun[11];
+    for(int j=0;j<11;j++){
+        cout<<"Enter "<<(j+1)<<"th element of array ";
+        cin>>shaun[j];
+    }
+    int size = sizeof(shaun)/sizeof(shaun[0]);
+    int a=0,b=0;
+    for(int i=0;i<size;i++){
+        if(shaun[i]%2==0){
+            a++;
+        }
+        else{
+            b++;
+        }
+    }
+    cout<<"No of even nos "<<a<<endl;
+    cout<<"No of odd nos "<<b<<endl;
+    return 0;
+}
